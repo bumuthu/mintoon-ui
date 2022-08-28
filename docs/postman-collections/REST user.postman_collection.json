@@ -1,0 +1,194 @@
+{
+	"info": {
+		"_postman_id": "f44c4af1-a1b4-4c30-9e51-5ee9f0ae92fd",
+		"name": "REST user",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14282029"
+	},
+	"item": [
+		{
+			"name": "User get by token",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{auth_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{env}}-api.mintoon.io/v1/user",
+					"protocol": "https",
+					"host": [
+						"{{env}}-api",
+						"mintoon",
+						"io"
+					],
+					"path": [
+						"v1",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User update by token",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{auth_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Bumuthu Dilshan\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{env}}-api.mintoon.io/v1/user",
+					"protocol": "https",
+					"host": [
+						"{{env}}-api",
+						"mintoon",
+						"io"
+					],
+					"path": [
+						"v1",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Bumuthu Dilshan\",\r\n    \"email\": \"bumuthu.dilshan@gmail.com\",\r\n    \"password\": \"Mintoon@123\",\r\n    \"type\": \"EMAIL\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{env}}-api.mintoon.io/v1/user",
+					"protocol": "https",
+					"host": [
+						"{{env}}-api",
+						"mintoon",
+						"io"
+					],
+					"path": [
+						"v1",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User pricing upgrade",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{auth_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"pricingPlan\": \"STANDARD\",\r\n    \"billingPeriod\": \"MONTHLY\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{env}}-api.mintoon.io/v1/user/upgrade",
+					"protocol": "https",
+					"host": [
+						"{{env}}-api",
+						"mintoon",
+						"io"
+					],
+					"path": [
+						"v1",
+						"user",
+						"upgrade"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pricing coupon validation",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{auth_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"code\": \"SLOFFER2022\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{env}}-api.mintoon.io/v1/user/upgrade/coupon",
+					"protocol": "https",
+					"host": [
+						"{{env}}-api",
+						"mintoon",
+						"io"
+					],
+					"path": [
+						"v1",
+						"user",
+						"upgrade",
+						"coupon"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

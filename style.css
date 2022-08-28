@@ -1,0 +1,9 @@
+.swiper-slide-active {
+  transform: scale(1.1);
+}
+.swiper-slide-prev {
+  transform: scale(1.05);
+}
+.swiper-slide-next {
+  transform: scale(1.05);
+}

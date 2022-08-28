@@ -1,0 +1,118 @@
+{
+    "namePrefix": "Untitled Collection",
+    "description": "Untitled description 2",
+    "baseUri": "https://mintoven.io",
+    "layerConfigurations": [
+        {
+            "growEditionSizeTo": 10,
+            "layersOrder": [
+                {
+                    "name": "Eyeball",
+                    "images": [
+                        {
+                            "name": "Red.png",
+                            "rarity": 50
+                        },
+                        {
+                            "name": "White.png",
+                            "rarity": 50
+                        }
+                    ]
+                },
+                {
+                    "name": "Eye color",
+                    "images": [
+                        {
+                            "name": "Cyan.png",
+                            "rarity": 20
+                        },
+                        {
+                            "name": "Green.png",
+                            "rarity": 20
+                        },
+                        {
+                            "name": "Pink.png",
+                            "rarity": 20
+                        },
+                        {
+                            "name": "Purple.png",
+                            "rarity": 20
+                        },
+                        {
+                            "name": "Red.png",
+                            "rarity": 10
+                        },
+                        {
+                            "name": "Yellow.png",
+                            "rarity": 10
+                        }
+                    ]
+                },
+                {
+                    "name": "Iris",
+                    "images": [
+                        {
+                            "name": "Large.png",
+                            "rarity": 10
+                        },
+                        {
+                            "name": "Medium.png",
+                            "rarity": 0
+                        },
+                        {
+                            "name": "Small.png",
+                            "rarity": 0
+                        }
+                    ]
+                },
+                {
+                    "name": "Shine",
+                    "images": [
+                        {
+                            "name": "Shapes.png",
+                            "rarity": 100
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "format": {
+        "width": 512,
+        "height": 512,
+        "smoothing": false
+    },
+    "gif": {
+        "export": false,
+        "repeat": 0,
+        "quality": 100,
+        "delay": 500
+    },
+    "background": {
+        "generate": true,
+        "brightness": "80%",
+        "static": false,
+        "default": "#000000"
+    },
+    "extraMetadata": {
+        "custom": "Hello"
+    },
+    "preview_gif": {
+        "numberOfImages": 5,
+        "order": "ASC",
+        "repeat": 0,
+        "quality": 100,
+        "delay": 500,
+        "imageName": "preview.gif"
+    },
+    "metadata_props": [
+        "name",
+        "description",
+        "image",
+        "dna",
+        "edition",
+        "date",
+        "attributes",
+        "compiler"
+    ]
+}
