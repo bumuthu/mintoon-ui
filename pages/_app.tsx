@@ -27,7 +27,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Mint Oven</title>
+        <title>Mintoon</title>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
       <ToastContainer />

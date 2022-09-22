@@ -1,7 +1,7 @@
 {
     "namePrefix": "Untitled Collection",
     "description": "Untitled description 2",
-    "baseUri": "https://mintoven.io",
+    "baseUri": "https://mintoon.io",
     "layerConfigurations": [
         {
             "growEditionSizeTo": 10,
