@@ -1,16 +1,18 @@
 import {
   Facebook,
   Instagram,
-  LinkedIn,
-  Pinterest,
+  YouTube,
   Twitter,
 } from "@mui/icons-material";
 import { Box } from "@mui/material";
 
 const Footer = () => {
+  const openInNewTab = (url: string) => {
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
   return (
     <>
-      <Box
+      {/* <Box
         display="flex"
         justifyContent="space-between"
         alignItems="center"
@@ -34,13 +36,12 @@ const Footer = () => {
         <Box color="#344767" fontWeight="400">
           Pricing
         </Box>
-      </Box>
+      </Box> */}
       <Box marginTop="24px">
-        <Facebook style={{ color: "#344767", margin: "0 12px" }} />
-        <Twitter style={{ color: "#344767", margin: "0 12px" }} />
-        <Instagram style={{ color: "#344767", margin: "0 12px" }} />
-        <Pinterest style={{ color: "#344767", margin: "0 12px" }} />
-        <LinkedIn style={{ color: "#344767", margin: "0 12px" }} />
+        <YouTube style={{ color: "#344767", margin: "0 12px" }} onClick={() => openInNewTab('https://www.youtube.com/channel/UCB37PkMF22kvKS0T5aKancQ')} />
+        <Facebook style={{ color: "#344767", margin: "0 12px" }} onClick={() => openInNewTab('https://www.facebook.com/mintoon.io')} />
+        <Instagram style={{ color: "#344767", margin: "0 12px" }} onClick={() => openInNewTab('https://www.instagram.com/mintoon_io')} />
+        <Twitter style={{ color: "#344767", margin: "0 12px" }} onClick={() => openInNewTab('https://twitter.com/mintoon_io')} />
       </Box>
       <Box color="#344767" fontWeight="400" marginTop="24px">
         Copyright © 2022 by Mintoon

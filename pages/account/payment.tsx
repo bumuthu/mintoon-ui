@@ -17,8 +17,8 @@ const Payment = () => {
   const theme = useTheme()
   const router = useRouter()
   const dispatch = useDispatch();
-  const userData = useSelector((state: RootState) => state.user.user);
-  const currentPlan = useSelector((state: RootState) => state.user.currentPlan);
+  let userData = useSelector((state: RootState) => state.user.user);
+  let currentPlan = useSelector((state: RootState) => state.user.currentPlan);
   useEffect(() => {
     if (started == false) {
       setStarted(true);
@@ -27,6 +27,7 @@ const Payment = () => {
         .then(([{ status }, payload]) => {
           console.log("User after payment complete:", payload.payload)
           dispatch(setUser({ ...userData, ...payload.payload }));
+          currentPlan = payload.payload.currentPlan;
         });
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps

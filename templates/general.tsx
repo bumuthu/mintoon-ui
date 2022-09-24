@@ -217,7 +217,7 @@ const GeneralTemplate = (props: Props) => {
           )
         )}
       </Box>
-      <Box
+      {/* <Box
         sx={{
           backgroundImage: 'linear-gradient(to top right, #12BDE2, #3B4BDF)',
           width: '100%',
@@ -247,7 +247,7 @@ const GeneralTemplate = (props: Props) => {
           >
           Watch
         </Button>
-      </Box>
+      </Box> */}
     </Box>
   );
   return (

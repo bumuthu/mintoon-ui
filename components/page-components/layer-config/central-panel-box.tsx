@@ -144,7 +144,7 @@ const CentralPanelBox = (props: Props) => {
             width: "100%",
             // minWidth: 144,
             backgroundColor: theme.palette.background.default,
-            borderRadius: `${theme.shape.borderRadius}px`,
+            borderRadius: `${Number(theme.shape.borderRadius) + 2}px`,
             height: 184,
             padding: "8px",
             border: `2px solid ${isSizeChange ? "#FF0000" : theme.palette.secondary.main

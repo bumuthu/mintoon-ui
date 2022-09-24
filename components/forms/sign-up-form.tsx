@@ -41,7 +41,7 @@ const SignUpForm = () => {
         .oneOf([Yup.ref("password"), null], "Passwords must match"),
     }),
     onSubmit: async (values) => {
-      if(checked) {
+      if (checked) {
         try {
           setLoading(true);
           const [msg] = await auth.register({
@@ -116,7 +116,7 @@ const SignUpForm = () => {
             color: theme.palette.secondary.main,
           }}
         >
-          I agree the
+          I read the
         </span>
         <span
           style={{
@@ -127,12 +127,12 @@ const SignUpForm = () => {
           }}
           onClick={handleClickOpen}
         >
-          Terms & Conditions
+          Privacy Policy
         </span>
-        <TermsAndConditionsDialog 
-          open={open} 
-          handleClickOpen={handleClickOpen} 
-          handleClose={handleClose} 
+        <TermsAndConditionsDialog
+          open={open}
+          handleClickOpen={handleClickOpen}
+          handleClose={handleClose}
         />
       </Box>
       <CustomButton

@@ -344,7 +344,7 @@ const CenterPanel = (props: Props) => {
                 height: 184,
                 backgroundColor: `${theme.palette.background.paper}54`,
                 color: theme.palette.text.secondary,
-                borderRadius: `${theme.shape.borderRadius}px`,
+                borderRadius: `${Number(theme.shape.borderRadius) + 2}px`,
                 padding: "8px",
                 border: `2px solid ${theme.palette.secondary.main}40`,
                 textAlign: "center",
